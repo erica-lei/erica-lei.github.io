@@ -1,0 +1,470 @@
+body,html {
+	margin: 0px;
+	padding:0px;
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	background-color: #FEFEFA;
+	color: #002F32;
+
+	width: 100%;
+	height: 100%;
+	min-width: 960px;;
+	-webkit-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+
+}
+
+a{
+	text-decoration: none;
+	color: #849B89;
+	font-weight:900px;
+
+
+}
+
+.clear {
+	clear: both;
+}
+
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+
+.img-scaled-wh {
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+
+#test{
+	width:100%;
+	height:6%;
+	background-color: #191919;
+
+/*	z-index:100;
+	position:fixed;*/
+	/*background-color:rgba(255,200,97,0.1);*/
+}
+
+#sidebar-button {
+	position: fixed;
+	z-index: 100;
+	left: 15px;
+	top: 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+
+} 
+
+
+.sidebar-container{
+	position: fixed;
+	width: 280px;
+	height:100%;
+	background-color:rgba(255,200,97,0.5);
+	-webkit-transform: translateX(-280px);
+	-webkit-transition:all 0.3s;
+}
+
+.sidebar-container ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-top: 100px;
+	font-size:30px;
+	/*black outline*/
+/*	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+
+
+
+}
+
+li{
+	padding:1em 0;
+}
+
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+#nav-toggle { 
+	position: absolute; 
+	left: 50%; top: 50%; 
+}
+
+#nav-toggle {
+	padding: 10px 30px 15px 0px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before {
+	top: -10px; 
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+
+
+#home-bar{
+	text-align:right;
+}
+
+.bar{
+	display:inline-block;
+	margin:15px;
+	padding:5px 5px 5px 5px;
+	cursor: pointer;
+
+}
+
+#about{
+	width: 100%;
+	height:50%;
+}
+
+#home-container{
+	height:100%;
+	width: 100%;
+	position:relative;
+
+}
+
+#overlay{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index: 10;
+}
+
+#picture{
+	background: url("../../assets/img/erica-home.png");
+	height:100%;
+	min-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	object-fit: cover;
+}
+
+#muir-beach{
+	height:100%;
+	width:100%;
+	background: rgba(0,0,0,0.3);
+}	
+
+#home-content{
+	letter-spacing: 3px;
+	font-weight:100;
+	position:absolute;
+	left:10%;
+	top:40%;
+	font-size:75px;
+	color:black;
+/*	z-index: 5;*/
+
+}
+
+.type-writer{
+	display: inline-block;
+	font-family: 'Lora', serif;
+
+}
+
+
+.typed-cursor{
+    opacity: 0.5;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+#about-container{
+	background-color:#E8DFC2;
+	height:70%;
+	width:100%;
+
+
+
+}
+
+#about-profile{
+	letter-spacing: 10px;
+	font-size:50px;
+	padding: 50px 150px 10px;
+	font-family: 'Nunito', sans-serif;
+
+}
+
+#about-content{
+	height: 400px;
+	width: 600px;
+	word-spacing: 5px;
+	font-size:20px;
+	letter-spacing: .2px;
+	padding: 25px 100px 25px 100px;
+	margin-left:10%;
+
+}
+
+
+#about-img{
+	height:300px;
+	width:300px;
+	float:right;
+	margin-right:30%;
+
+
+}
+
+
+#experience-container{
+
+	padding: 25px 100px 25px 100px;
+	background-color: #F6FFF5;
+
+
+}
+
+
+#experience-img{
+	background-image: url("../../assets/img/campanile.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+.experience-detail{
+	font-size: 20px;
+	height:15%;
+	width:80%;
+	margin:20px;
+	letter-spacing: .2px;
+	padding: 25px 100px 25px 100px;
+	margin-left:10%;
+
+}
+
+.experience-content{
+	margin-left:10%;
+
+}
+
+.task{
+	font-size:30px;
+}
+
+.company{
+	font-size:20px;
+}
+
+#experience-profile{
+	letter-spacing: 10px;
+	font-size:50px;
+	padding:30px;
+	margin:10px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.club-title{
+	font-size: 25px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+
+/*Contact me */
+
+#contact-container{
+	background-color:#E8DFC2;
+	height:100%;
+	width:100%;
+	position:relative;
+
+}
+
+#contact-me-des{
+	height:30%;
+	width:25%;
+	margin-left:45%;
+	position:absolute;
+	bottom:40%;
+	font-size: 40px;
+
+
+}
+
+.fly-in-text{
+	list-style: none;
+	font-family: Nunito;
+	position:absolute;
+	left:55%;
+	bottom:55%;
+	transform: translateX(-50%) translateY(-50%);
+
+
+}
+
+.fly-in-text hidden{
+	position:absolute;
+	top:10px;
+}
+
+
+.fly-in-text li{
+	display: inline-block;
+	font-size:4em;
+	font-weight: 300;
+	opacity:1;
+	transition: all 3s ease;
+}
+
+.fly-in-text li: last-child{
+	margin-right:0;
+} 
+
+.fly-in-text.hidden li{
+	opacity:0;
+
+}	
+
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-70px); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(125px); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(-25px) translateY(-130px); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(40px) translateY(20px); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(-10px) translateY(-20px); }
+.fly-in-text.hidden li:nth-child(8) { transform: translateX(75px) translateY(80px); }
+.fly-in-text.hidden li:nth-child(9) { transform: translateX(-50px) translateY(-40px); }
+
+#contact-profile{
+	font-size:20px;
+
+}
+
+#contact-box{
+	width:30%;
+	height:50%;
+	margin-left:10%;
+	margin-bottom: 2%;
+	bottom:30%;
+
+	position:absolute;
+
+
+
+
+}
+
+.group-contact{
+	height:10%;
+	width:90%;
+	border-style:solid;
+	margin:10px;
+	background:white;
+	border-color:#001C2E;
+	border-width:5px;
+	font-size: 20px;
+
+}
+
+
+
+#description-contact{
+	height:80%;
+	width:90%;
+	margin:10px;
+	border-color:#001C2E;
+	border-width:5px;
+	font-size:20px;
+}
+
+#send-button{
+	height:5%;
+	width:7%;
+	cursor: pointer;
+	background:#177182;
+	margin-left: 20%;
+/*	margin-bottom:20%;*/
+	font-size: 20px;
+	border-radius: 10px;
+	color:white;
+	position:absolute;
+	bottom:15%;
+}
+
+#send-button:hover{
+	background-color: #A7E2FF;
+	color:black;
+
+}
+
+
+/*JQuery*/
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.wrapper-active, .button-active {
+	-webkit-transform: translateX(280px);
+	-moz-transform: translateX(280px);
+	transform: translateX(280px);
+}
+
+.sidebar-active {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+}
+
+.search-bar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*I need to know the moz, firefox, internet etc */
+/*samesize all across different computers*/ 
+/*when i resize, pictures and text dont overlap*/
+
+/*the CONTACT ME floating move back to the bottom, 
+how to make it fade in when i hit a certain spot 
+uploading to github
+position absolute -- overrides all other stuff how to stop overlap*/*/
+
