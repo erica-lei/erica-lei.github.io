@@ -42,11 +42,8 @@ a{
 #test{
 	width:100%;
 	height:6%;
-	background-color: #191919;
+	background-color:#000000;
 
-/*	z-index:100;
-	position:fixed;*/
-	/*background-color:rgba(255,200,97,0.1);*/
 }
 
 #sidebar-button {
@@ -137,11 +134,6 @@ li{
 
 }
 
-#about{
-	width: 100%;
-	height:50%;
-}
-
 #home-container{
 	height:100%;
 	width: 100%;
@@ -180,14 +172,11 @@ li{
 	top:40%;
 	font-size:75px;
 	color:black;
-/*	z-index: 5;*/
-
 }
 
 .type-writer{
 	display: inline-block;
 	font-family: 'Lora', serif;
-
 }
 
 
@@ -216,11 +205,8 @@ li{
 
 #about-container{
 	background-color:#E8DFC2;
-	height:70%;
+	height:100%;
 	width:100%;
-
-
-
 }
 
 #about-profile{
@@ -240,8 +226,15 @@ li{
 	padding: 25px 100px 25px 100px;
 	margin-left:10%;
 
+/*	visibility:hidden;*/
+/*	opacity:0;*/
 }
 
+/*#about-content-animate{
+	opacity:1;
+}
+
+*/
 
 #about-img{
 	height:300px;
@@ -249,15 +242,14 @@ li{
 	float:right;
 	margin-right:30%;
 
-
 }
 
+/*experience*/
 
 #experience-container{
 
 	padding: 25px 100px 25px 100px;
 	background-color: #F6FFF5;
-
 
 }
 
@@ -276,16 +268,21 @@ li{
 	letter-spacing: .2px;
 	padding: 25px 100px 25px 100px;
 	margin-left:10%;
+/*	line-height: 120%;*/
+
 
 }
 
 .experience-content{
-	margin-left:10%;
-
+	margin-left:15%;
+	margin-right:15%;
+/*	line-height: 150%;*/
 }
 
 .task{
 	font-size:30px;
+	margin-top:7%;
+
 }
 
 .company{
@@ -296,16 +293,21 @@ li{
 	letter-spacing: 10px;
 	font-size:50px;
 	padding:30px;
-	margin:10px;
+	margin:3%;
 	font-family: 'Nunito', sans-serif;
+	line-height: 5%;
 }
 
 .club-title{
 	font-size: 25px;
 	margin-bottom:10px;
-	margin-top:10px;
+
 }
 
+.dog{
+	font-size:30px;
+	margin-top:1%;
+}
 
 /*Contact me */
 
@@ -314,25 +316,44 @@ li{
 	height:100%;
 	width:100%;
 	position:relative;
+/*	z-index: 90;*/
 
 }
 
 #contact-me-des{
 	height:30%;
 	width:25%;
-	margin-left:45%;
+	margin-left:50%;
 	position:absolute;
 	bottom:40%;
 	font-size: 40px;
 
-
+/*	display: block;*/
+/*	opacity: 0;
+	transition: all 200ms ease-in;*/
 }
+
+/*#contact-me-des-animate{
+	opacity: 1;
+	animation: slidein 350ms linear;
+
+}*/
+
+/*@keyframes slidein {
+  from {
+    margin-right: 100%;
+  }
+
+  to {
+    margin-right: 50%;
+  }
+}*/
 
 .fly-in-text{
 	list-style: none;
 	font-family: Nunito;
 	position:absolute;
-	left:55%;
+	left:60%;
 	bottom:55%;
 	transform: translateX(-50%) translateY(-50%);
 
@@ -347,10 +368,14 @@ li{
 
 .fly-in-text li{
 	display: inline-block;
-	font-size:4em;
+	font-size:3em;
 	font-weight: 300;
 	opacity:1;
 	transition: all 3s ease;
+	-webkit-transition: 3s ease;
+    -moz-transition: 3s ease;
+	-o-transition: 3s ease;
+
 }
 
 .fly-in-text li: last-child{
@@ -380,10 +405,9 @@ li{
 #contact-box{
 	width:30%;
 	height:50%;
-	margin-left:10%;
+	margin-left:20%;
 	margin-bottom: 2%;
 	bottom:30%;
-
 	position:absolute;
 
 
@@ -396,7 +420,7 @@ li{
 	width:90%;
 	border-style:solid;
 	margin:10px;
-	background:white;
+	background:#F6FFF5;
 	border-color:#001C2E;
 	border-width:5px;
 	font-size: 20px;
@@ -412,6 +436,7 @@ li{
 	border-color:#001C2E;
 	border-width:5px;
 	font-size:20px;
+	background:#F6FFF5;
 }
 
 #send-button{
@@ -419,13 +444,15 @@ li{
 	width:7%;
 	cursor: pointer;
 	background:#177182;
-	margin-left: 20%;
+	margin-left: 30%;
 /*	margin-bottom:20%;*/
 	font-size: 20px;
-	border-radius: 10px;
+	border-radius: 5px;
+	letter-spacing: 1px;
 	color:white;
 	position:absolute;
 	bottom:15%;
+	border-color: #177182;
 }
 
 #send-button:hover{
@@ -459,12 +486,12 @@ li{
   width: 100%;
 }
 
-/*I need to know the moz, firefox, internet etc */
+
 /*samesize all across different computers*/ 
-/*when i resize, pictures and text dont overlap*/
+/*how to make it fade in when i hit a certain spot 
+position absolute -- overrides all other stuff how to stop overlap*/
 
-/*the CONTACT ME floating move back to the bottom, 
-how to make it fade in when i hit a certain spot 
-uploading to github
-position absolute -- overrides all other stuff how to stop overlap*/*/
-
+/*waypoint
+overlap experience
+sticky nav 
+*/
